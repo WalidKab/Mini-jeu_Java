@@ -31,11 +31,12 @@ public class Menu {
 		
 		System.out.println("Bienvenu dans D&D");
 		System.out.println("Pour un guerrier tapez 1, pour un sorcier tapez 2 ou tapez 3 pour quitter");
-		int playerChoice = 1;
+		int playerChoice ;
 		try {
 			playerChoice = scan.nextInt(); // Variable qui définit le type de perso choisi en fonction de l'entrée clavier
 		} catch(Exception e){
-		    System.out.println("Petit malin, tu as tapé une lettre, tu auras donc un guerrier de merde");
+			playerChoice = 1;
+		    System.err.println("Petit malin, tu as tapé une lettre, tu auras donc un guerrier de merde");
 		}
 	
 		// Création de variable qui génèrent un chiffre aléatoire pour les points d'attaque et de vie du guerrier	
