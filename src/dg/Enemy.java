@@ -1,31 +1,45 @@
 package dg;
 
-public abstract class Attack {
+public abstract class Enemy {
+
+	String name;
+	int life;
+	int damage;
 	
-	private String name; 
-	private int damage;
-	
-	public Attack(String name, int damage) {
+	public Enemy(String name, int life, int damage) {
+		super();
 		this.name = name;
+		this.life = life;
 		this.damage = damage;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	public int getLife() {
+		return life;
+	}
+
+	public void setLife(int life) {
+		this.life = life;
+	}
+
 	public int getDamage() {
 		return damage;
 	}
+
 	public void setDamage(int damage) {
 		this.damage = damage;
 	}
-	
-	// Création d'une fonction toString afin d'afficher les caractéristiques du sort
+
 	@Override
 	public String toString() {
-		return "[name=" + name + ", damage=" + damage + "]";
+		return   name + ", life=" + life + ", damage=" + damage ;
 	}
 	
 }

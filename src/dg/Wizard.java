@@ -52,4 +52,8 @@ public class Wizard extends Characters{
 		public void setPhiltre(String philtre) {
 			this.philtre = philtre;
 		}
+		
+		public void setFate(Fate sort) {
+			this.fate = sort;
+		}
 }

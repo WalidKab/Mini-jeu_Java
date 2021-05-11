@@ -5,9 +5,7 @@ public abstract class Characters {
 	private String name;
 	private int life ;
 	private int attackLevel;
-	
-	
-	
+		
 	public Characters(String name, int life, int attackLevel) {
 		super();
 		this.name = name;

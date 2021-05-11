@@ -42,4 +42,7 @@ public class Warrior extends Characters {
 			this.shield = shield;
 		}	
 		
+		public void setWeapon(Weapon weapon) {
+			this.weapon = weapon;
+		}
 }
